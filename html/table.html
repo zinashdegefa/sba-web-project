@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="m-5">
+    
+      <div class="row">
+        
+          <div class="col-md-6">
+            <button id="getStudent" type="submit" class="btn btn-primary">
+              Get All Students Details
+            </button>
+          </div>
+       
+        <a class="col-md-6" href="home.html"
+          ><button
+            type="button"
+            class="btn btn-primary"
+            style="float: right"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="Go To Home"
+          >
+            <i class="fa fa-home"></i></button
+        ></a>
+      </div>
+   
+    <br />
+    <table id="displayTable" class="table table-hover table-border table-dark col-12" style="display:none;">
+      <thead id = "tableHead">
+          <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Address 1</th>
+              <th>Address 2</th>
+              <th>City</th>
+              <th>State</th>
+              <th>Zip Code</th>
+          </tr>
+      </thead>
+      <tbody id="allStudents" class="bg-secondary text-white">
+
+      </tbody>
+      </table>
+
+    <!-- <P id="displayStudent"></P> -->
+
+    <script src="../js/main.js"></script>
+  </body>
+</html>
